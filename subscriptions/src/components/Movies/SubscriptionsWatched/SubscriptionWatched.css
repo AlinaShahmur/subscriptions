@@ -1,0 +1,15 @@
+.subscriptions.visible {
+    display: block;
+}
+
+.subscriptions {
+    display: none;
+    margin:0.8rem auto;
+
+}
+
+.subscriptions table {
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 5px;
+}

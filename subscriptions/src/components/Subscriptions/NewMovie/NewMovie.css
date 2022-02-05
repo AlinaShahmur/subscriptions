@@ -1,0 +1,19 @@
+.add-movie-sub {
+    display: none;
+}
+
+.add-movie-sub.visible {
+    display: block;
+    margin: 1rem;
+}
+
+.add-movie-sub form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.add-movie-sub .form-control {
+    margin: 0.5rem;
+}

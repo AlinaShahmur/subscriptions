@@ -1,0 +1,71 @@
+.movie {
+    padding: 1.2rem;
+    width:500px;
+}
+
+.movie-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-content .subs-watched {
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border:1px solid #999999;
+    cursor: pointer;
+    margin: 0.8rem;
+}
+
+.movie-content .subs-watched  .fa-sort-down {
+    transition: transform 0.3s ease-in;
+    transform: translateY(-25%);
+    margin-left: 0.5rem;
+}
+
+.movie-content .subs-watched.isopen  .fa-sort-down{
+    transform: rotate(180deg)
+
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie-info-text .genres {
+    margin-left: 3rem;
+}
+
+.movie-info-text .genres li{
+    margin: 0.8rem 0;
+    position: relative;
+}   
+
+.movie-info-text .genres li::before {
+    content: "\f008";
+    font-family: FontAwesome;
+    position: absolute;
+    left: -20px;
+
+}
+
+.img-container {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    height: 290px;
+}
+
+@media screen and (max-width: 768px) {
+    .movie {
+        max-width: 350px;
+    }
+    .movie-content {
+        align-items: center;
+    }
+    
+    .movie-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}

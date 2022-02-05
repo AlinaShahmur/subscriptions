@@ -1,0 +1,49 @@
+.toggler input{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .toggler label {
+        top: 24px;
+        right: 20px;    
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    
+    .toggler label,
+    .toggler label:before,
+    .toggler label:after {
+        content: '';
+        width: 15px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        background-color: #009999;
+        transition: transform 0.5s;
+    }
+    
+    .toggler label:before {
+        top: -5px;
+        transform-origin: left top;
+        transform: rotatez(0deg)
+    }
+    
+    .toggler label:after {
+        top: 5px;
+        transform-origin: left bottom;
+        transform: rotatez(0deg)
+    }
+    
+    .toggler input:checked ~ label{
+        background-color: #333333;
+    }
+    
+    .toggler input:checked ~ label:before {
+        transform: rotatez(45deg)
+    }
+    .toggler input:checked ~ label:after {
+        transform: rotatez(-45deg)
+    }
+    
+}
+

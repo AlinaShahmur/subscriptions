@@ -1,0 +1,16 @@
+.search-panel {
+    text-align: center;
+}
+
+.search-panel div {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.search-panel .reset-search-btn{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border:1px solid #999999;
+    cursor: pointer;
+    color: rgb(110,0,0)
+}
